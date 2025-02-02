@@ -9,14 +9,24 @@ export default function IfoodButton() {
     <Button
       variant="contained"
       sx={{
-        backgroundColor: "#EA1D2C",
+        background: "linear-gradient(45deg, #EA1D2C, #C81A28)",
         color: "#fff",
         width: "120px",
         height: "50px",
+        borderRadius: "25px",
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        transition: "transform 0.2s, box-shadow 0.2s",
+        "&:hover": {
+          transform: "scale(1.05)",
+          boxShadow: "0 6px 8px rgba(0, 0, 0, 0.15)",
+        },
         "@media (max-width: 600px)": {
           width: "100px",
           height: "40px",
+          borderRadius: "20px",
         },
+        position: "relative",
+        overflow: "hidden",
       }}
       onClick={() =>
         window.open(
@@ -29,7 +39,10 @@ export default function IfoodButton() {
         alt="Ifood"
         src={Ifood}
         fill
-        style={{ objectFit: "cover", borderRadius: "8px" }}
+        style={{
+          objectFit: "cover",
+          borderRadius: "8px",
+        }}
       />
     </Button>
   );

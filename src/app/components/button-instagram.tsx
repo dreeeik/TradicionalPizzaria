@@ -1,14 +1,15 @@
 "use client";
 
 import Button from "@mui/material/Button";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
-export default function WhatsAppButton() {
+export default function InstagramButton() {
   return (
     <Button
       variant="contained"
       sx={{
-        background: "linear-gradient(45deg, #25D366, #128C7E)",
+        background:
+          "linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)",
         color: "#fff",
         width: "120px",
         height: "50px",
@@ -25,9 +26,14 @@ export default function WhatsAppButton() {
           borderRadius: "20px",
         },
       }}
-      onClick={() => window.open("https://wa.me/5512991980766", "_blank")}
+      onClick={() =>
+        window.open(
+          "https://www.instagram.com/pizzaria_tradicional1?igsh=MWNia3p5dW0zbjFraA%3D%3D&utm_source=qr ",
+          "_blank"
+        )
+      }
     >
-      <WhatsAppIcon
+      <InstagramIcon
         sx={{
           color: "#fff",
           fontSize: "30px",

@@ -4,6 +4,7 @@ import Tradicional from "../../public/Tradicional.jpg";
 import Fundo from "../../public/Fundo.jpg";
 import WhatsAppButton from "./components/button-zap";
 import IfoodButton from "./components/button-ifood";
+import InstagramButton from "./components/button-instagram";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
         >
           <IfoodButton />
           <WhatsAppButton />
+          <InstagramButton />
         </Stack>
       </Stack>
     </div>
