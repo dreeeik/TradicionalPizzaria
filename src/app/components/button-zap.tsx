@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
           borderRadius: "20px",
         },
       }}
-      onClick={() => window.open("https://wa.me/5512991980766", "_blank")}
+      onClick={() => window.open("https://wa.me/5512981113726", "_blank")}
     >
       <WhatsAppIcon
         sx={{
